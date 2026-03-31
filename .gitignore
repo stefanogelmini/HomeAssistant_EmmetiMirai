@@ -51,3 +51,5 @@ htmlcov/
 .env
 .env.local
 *.log
+
+__pycache__
