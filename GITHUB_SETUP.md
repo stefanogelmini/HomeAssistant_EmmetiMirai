@@ -61,7 +61,7 @@ git checkout -b feature/my-feature
 
 # 3. Aggiorna il versionamento
 git checkout main
-# Aggiorna: emmeti_mirai/manifest.json, setup.py, CHANGELOG.md
+# Aggiorna: manifest.json, setup.py, CHANGELOG.md
 
 # 4. Commit
 git add .

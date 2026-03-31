@@ -32,7 +32,7 @@ git log --oneline --all --decorate
 
 ### Bump versione
 
-1. Aggiorna `emmeti_mirai/manifest.json` → `version`
+1. Aggiorna `manifest.json` → `version`
 2. Aggiorna `setup.py` → `version`
 3. Aggiorna `CHANGELOG.md`
 4. Commit: `git commit -m "Bump version to v1.x.x"`
@@ -43,29 +43,28 @@ git log --oneline --all --decorate
 
 ```
 H:\Emmeti_Mirai/
-├── emmeti_mirai/                    # Integrazione HA
-│   ├── __init__.py
-│   ├── manifest.json                # Versione HA
-│   ├── const.py                     # Registri Modbus
-│   ├── config_flow.py               # UI configurazione
-│   ├── coordinator.py               # Coordinator HA
-│   ├── modbus_client.py             # Client Modbus RTU/TCP
-│   ├── sensor.py
-│   ├── binary_sensor.py
-│   ├── number.py
-│   ├── select.py
-│   ├── switch.py
-│   ├── entity_base.py
-│   ├── test_integration.py
-│   ├── icons/
-│   │   └── emmeti_mirai/
-│   │       └── heat_pump.svg        # Icona personalizzata
-│   ├── translations/
-│   │   ├── en.json
-│   │   └── it.json
-│   ├── strings.json
-│   ├── README.md
-│   └── hacs.json
+├── __init__.py                      # Integrazione HA
+├── manifest.json                    # Versione HA
+├── const.py                         # Registri Modbus
+├── config_flow.py                   # UI configurazione
+├── coordinator.py                   # Coordinator HA
+├── modbus_client.py                 # Client Modbus RTU/TCP
+├── sensor.py
+├── binary_sensor.py
+├── number.py
+├── select.py
+├── switch.py
+├── entity_base.py
+├── test_integration.py
+├── icons/
+│   └── emmeti_mirai/
+│       └── heat_pump.svg            # Icona personalizzata
+├── translations/
+│   ├── en.json
+│   └── it.json
+├── strings.json
+├── README.md
+├── hacs.json
 ├── .github/
 │   └── workflows/
 │       └── python-lint.yml          # CI/CD
@@ -75,7 +74,6 @@ H:\Emmeti_Mirai/
 ├── setup.py                         # Setup package
 ├── pyproject.toml                   # Configurazione progetto
 └── .gitignore                       # Git ignore
-
 ```
 
 ## Releases
@@ -100,7 +98,7 @@ git log --oneline -n 10 # Lista ultimi 10 commit
 ## Testing
 
 ```bash
-python -m pytest emmeti_mirai/test_integration.py -v
+python -m pytest test_integration.py -v
 ```
 
 ## Code Style
@@ -110,9 +108,9 @@ python -m pytest emmeti_mirai/test_integration.py -v
 - **flake8**: Linting
 
 ```bash
-black emmeti_mirai/
-isort emmeti_mirai/
-flake8 emmeti_mirai/
+black .
+isort .
+flake8 .
 ```
 
 ## CI/CD

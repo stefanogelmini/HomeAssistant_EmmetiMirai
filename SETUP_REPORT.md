@@ -6,34 +6,31 @@ La struttura del progetto **Emmeti Mirai** è stata creata e il repository Git l
 
 ```
 H:\Emmeti_Mirai/
-├── emmeti_mirai/                    # Home Assistant Integration
-│   ├── __init__.py                  # Coordinator entry point
-│   ├── manifest.json                # HA integration config (v1.0.0)
-│   ├── const.py                     # Registri Modbus (100+ entità)
-│   ├── config_flow.py               # Config Flow UI
-│   ├── coordinator.py               # Data coordinator
-│   ├── modbus_client.py             # Modbus RTU/TCP client
-│   ├── entity_base.py               # Base entity class
-│   ├── sensor.py                    # Sensor platform
-│   ├── binary_sensor.py             # Binary sensor platform
-│   ├── number.py                    # Number platform
-│   ├── select.py                    # Select platform
-│   ├── switch.py                    # Switch platform
-│   ├── test_integration.py          # Integration tests
-│   ├── icons/
-│   │   └── emmeti_mirai/
-│   │       └── heat_pump.svg        # Custom SVG icon
-│   ├── translations/
-│   │   ├── en.json                  # English translations
-│   │   └── it.json                  # Italian translations
-│   ├── strings.json                 # String definitions
-│   ├── README.md                    # README interno
-│   └── hacs.json                    # HACS manifest
-│
+├── __init__.py                      # Home Assistant Integration
+├── manifest.json                    # HA integration config (v1.0.0)
+├── const.py                         # Registri Modbus (100+ entità)
+├── config_flow.py                   # Config Flow UI
+├── coordinator.py                   # Data coordinator
+├── modbus_client.py                 # Modbus RTU/TCP client
+├── entity_base.py                   # Base entity class
+├── sensor.py                        # Sensor platform
+├── binary_sensor.py                 # Binary sensor platform
+├── number.py                        # Number platform
+├── select.py                        # Select platform
+├── switch.py                        # Switch platform
+├── test_integration.py              # Integration tests
+├── icons/
+│   └── emmeti_mirai/
+│       └── heat_pump.svg            # Custom SVG icon
+├── translations/
+│   ├── en.json                      # English translations
+│   └── it.json                      # Italian translations
+├── strings.json                     # String definitions
+├── README.md                        # README interno
+├── hacs.json                        # HACS manifest
 ├── .github/
 │   └── workflows/
 │       └── python-lint.yml          # GitHub Actions CI/CD
-│
 ├── LICENSE                          # MIT License
 ├── CHANGELOG.md                     # Release notes (v1.0.0)
 ├── README_DEVELOPMENT.md            # Developer guide
@@ -100,10 +97,10 @@ Quando aggiorni il componente, segui questo workflow:
 # 1. Crea feature branch
 git checkout -b feature/my-feature
 
-# 2. Fai i cambiamenti in emmeti_mirai/
+# 2. Fai i cambiamenti nella radice del progetto
 
 # 3. Aggiorna versione
-# - emmeti_mirai/manifest.json → version: "1.0.1"
+# - manifest.json → version: "1.0.1"
 # - setup.py → version="1.0.1"
 # - CHANGELOG.md → aggiungi sezione [1.0.1]
 
