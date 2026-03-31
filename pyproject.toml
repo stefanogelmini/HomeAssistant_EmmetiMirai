@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emmeti-mirai-ha"
+version = "1.0.0"
+description = "Emmeti Mirai Home Assistant Integration - Modbus TCP support"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Stefano Gelmini"}
+]
+keywords = ["home-assistant", "emmeti", "mirai", "heat-pump", "modbus", "tcp"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/stefanogelmini/Emmeti_Mirai"
+"Bug Tracker" = "https://github.com/stefanogelmini/Emmeti_Mirai/issues"
+Documentation = "https://github.com/stefanogelmini/Emmeti_Mirai#readme"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pylint]
+max-line-length = 100
